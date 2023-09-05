@@ -89,7 +89,7 @@ function App() {
                   Oleksandr Dzisiak
                 </h1>
               <p className="text-xs md:text-base text-muted-foreground">
-                Portfolio os SketchUp PV visualizations
+                Portfolio of SketchUp PV visualizations
               </p>
             </div>
 
