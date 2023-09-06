@@ -21,7 +21,8 @@ import img16 from "./assets/images/16.webp";
 import img17 from "./assets/images/17.webp";
 import img18 from "./assets/images/18.webp";
 import img19 from "./assets/images/19.webp";
-import img1 from "./assets/images/100.webp";
+import img1 from "./assets/images/100.jpg";
+
 import { ScrollArea } from "./components/ui/scroll-area";
 import { AtSign, Linkedin, PhoneOutgoing } from "lucide-react";
  type DataImg = {
