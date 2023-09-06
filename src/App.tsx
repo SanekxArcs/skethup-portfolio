@@ -3,23 +3,25 @@ import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 
-import img2 from "./assets/images/2.jpg";
-import img3 from "./assets/images/3.jpg";
-import img4 from "./assets/images/4.jpg";
-import img5 from "./assets/images/5.jpg";
-import img6 from "./assets/images/6.jpg";
-import img7 from "./assets/images/7.jpg";
-import img8 from "./assets/images/8.jpg";
-import img9 from "./assets/images/9.jpg";
-import img10 from "./assets/images/10.jpg";
-import img11 from "./assets/images/11.jpg";
-import img12 from "./assets/images/12.jpg";
-import img13 from "./assets/images/13.jpg";
-import img14 from "./assets/images/14.jpg";
-import img15 from "./assets/images/15.jpg";
-import img16 from "./assets/images/16.jpg";
-import img17 from "./assets/images/17.jpg";
-import img1 from "./assets/images/100.jpg";
+import img2 from "./assets/images/2.webp";
+import img3 from "./assets/images/3.webp";
+import img4 from "./assets/images/4.webp";
+import img5 from "./assets/images/5.webp";
+import img6 from "./assets/images/6.webp";
+import img7 from "./assets/images/7.webp";
+import img8 from "./assets/images/8.webp";
+import img9 from "./assets/images/9.webp";
+import img10 from "./assets/images/10.webp";
+import img11 from "./assets/images/11.webp";
+import img12 from "./assets/images/12.webp";
+import img13 from "./assets/images/13.webp";
+import img14 from "./assets/images/14.webp";
+import img15 from "./assets/images/15.webp";
+import img16 from "./assets/images/16.webp";
+import img17 from "./assets/images/17.webp";
+import img18 from "./assets/images/18.webp";
+import img19 from "./assets/images/19.webp";
+import img1 from "./assets/images/100.webp";
 import { ScrollArea } from "./components/ui/scroll-area";
 import { AtSign, Linkedin, PhoneOutgoing } from "lucide-react";
  type DataImg = {
@@ -76,6 +78,12 @@ function App() {
       image: img17,
     },
     {
+      image: img18,
+    },
+    {
+      image: img19,
+    },
+    {
       image: img1,
     },
   ];
@@ -84,8 +92,8 @@ function App() {
       <div className="flex justify-between flex-col h-[100svh]">
         <header className="max-h-[20svh] overflow-hidden">
           <div className="flex flex-col md:flex-row justify-between p-5 gap-2.5">
-            <div className="flex flex-col md:gap-2 justify-center items-center md:justify-start md:items-start">
-                <h1 className="flex text-lg lg:text-5xl uppercase font-extrabold text-center md:text-left">
+            <div className="flex flex-col items-center justify-center md:gap-2 md:justify-start md:items-start">
+                <h1 className="flex text-lg font-extrabold text-center uppercase lg:text-5xl md:text-left">
                   Oleksandr Dzisiak
                 </h1>
               <p className="text-xs md:text-base text-muted-foreground">
@@ -93,8 +101,8 @@ function App() {
               </p>
             </div>
 
-            <nav className="flex flex-col gap-3 justify-center items-center">
-              <h2 className="hidden lg:block text-5xl uppercase font-extrabold">
+            <nav className="flex flex-col items-center justify-center gap-3">
+              <h2 className="hidden text-5xl font-extrabold uppercase lg:block">
                 Contacts
               </h2>
               <div className="flex gap-2 text-xs">
@@ -120,13 +128,13 @@ function App() {
 
           <Separator className="my-5" />
         </header>
-        <main className="flex justify-center items-center">
+        <main className="flex items-center justify-center">
           <ScrollArea className="rounded-none h-[70svh] max-w-[100svw] overflow-hidden lg:px-5 px-1">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-4">
               {imageDataArray.map(({ image }, index) => (
                 <article
                   key={index}
-                  className="bg-card border-2 flex flex-col rounded-lg p-5 lg:last:col-span-4"
+                  className="flex flex-col p-5 border-2 rounded-lg bg-card lg:last:col-span-4"
                 >
                   <img
                     className="w-full h-full bg-cover rounded-md"
@@ -140,7 +148,7 @@ function App() {
         </main>
         <footer className="flex flex-col justify-end items-center pb-5 max-h-[10svh] ">
           <Separator className="my-5" />
-          <p className="text-muted-foreground text-center text-xs md:text-base">
+          <p className="text-xs text-center text-muted-foreground md:text-base">
             Made for show my visualization work in SketchUp
           </p>
         </footer>
